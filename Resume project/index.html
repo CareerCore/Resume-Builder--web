@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ResumePro</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- PARTICLES -->
+<div class="particles"></div>
+
+<!-- NAVBAR -->
+<nav>
+
+<h1>ResumePro</h1>
+
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+
+<h2>Create Professional Resume</h2>
+
+<p>Modern • Dynamic • Attractive • Responsive</p>
+
+</div>
+
+<!-- CONTAINER -->
+<div class="container">
+
+<!-- FORM -->
+<div class="form">
+
+<h2>Enter Your Details</h2>
+
+<button class="templateBtn"
+onclick="setTemplate1()">
+
+Use Template 1
+
+</button>
+
+<button class="templateBtn"
+onclick="setTemplate2()">
+
+Use Template 2
+
+</button>
+
+<input type="text"
+id="name"
+placeholder="Full Name">
+
+<input type="text"
+id="title"
+placeholder="Professional Title">
+
+<input type="email"
+id="email"
+placeholder="Email">
+
+<input type="text"
+id="phone"
+placeholder="Phone Number">
+
+<textarea id="skills"
+placeholder="Skills (comma separated)">
+</textarea>
+
+<textarea id="education"
+placeholder="Education">
+</textarea>
+
+<textarea id="experience"
+placeholder="Experience">
+</textarea>
+
+<input type="file" id="image">
+
+<button class="generate"
+onclick="generateResume()">
+
+Generate Resume
+
+</button>
+
+<button class="download"
+onclick="downloadPDF()">
+
+Download PDF
+
+</button>
+
+</div>
+
+<!-- RESUME -->
+<div class="resume template1" id="resume">
+
+<!-- LEFT -->
+<div class="left">
+
+<img id="imgPreview">
+
+<h2 id="rName"></h2>
+
+<h4 id="rTitle"></h4>
+
+<br>
+
+<p>📧 <span id="rEmail"></span></p>
+
+<p>📱 <span id="rPhone"></span></p>
+
+</div>
+
+<!-- RIGHT -->
+<div class="right">
+
+<h3>Education</h3>
+
+<p id="rEducation"></p>
+
+<h3>Experience</h3>
+
+<p id="rExperience"></p>
+
+<h3>Skills</h3>
+
+<div id="rSkills"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
